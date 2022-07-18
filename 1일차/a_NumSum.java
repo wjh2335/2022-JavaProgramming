@@ -1,6 +1,8 @@
+/* N(1 <= N <= 100)길이의 문자열을 받고 각 자리 수를 더한 값을 출력하는 프로그램 */
+
 package pack;
 import java.util.Scanner;
-public class NumSum
+public class a_NumSum
 {
     public static void main(String[] args)
     {
