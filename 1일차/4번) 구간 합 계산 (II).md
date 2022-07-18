@@ -26,9 +26,9 @@ public class main
 		for(int i = 0; i < t; ++i)
 		{
 			int x1 = input.nextInt(), y1 = input.nextInt(), x2 = input.nextInt(), y2 = input.nextInt();
-			if(x1 - 2 < 0 && y1 - 2 < 0) System.out.println(psum[x2 - 1][y2 - 1]);
-			else if(x1 - 2 < 0) System.out.println(psum[x2 - 1][y2 - 1] - psum[x2 - 1][y1 - 2]);
-			else if(y1 - 2 < 0) System.out.println(psum[x2 - 1][y2 - 1] - psum[x1 - 2][y2 - 1]);
+			if(x1 == 1 && y1 == 1) System.out.println(psum[x2 - 1][y2 - 1]);
+			else if(x1 == 1) System.out.println(psum[x2 - 1][y2 - 1] - psum[x2 - 1][y1 - 2]);
+			else if(y1 == 1) System.out.println(psum[x2 - 1][y2 - 1] - psum[x1 - 2][y2 - 1]);
 			else System.out.println(psum[x2 - 1][y2 - 1] - psum[x2 - 1][y1 - 2] - psum[x1 - 2][y2 - 1] + psum[x1 - 2][y1 - 2]);
 		}
 		input.close();
