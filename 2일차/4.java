@@ -1,8 +1,8 @@
-package Practice;
+package pack;
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Practice
+public class main
 {
 	public static void main(String[] args)
 	{
@@ -15,7 +15,7 @@ public class Practice
 		Arrays.sort(arr);
 		
 		int ans = 0;
-		for(int k = 0; k < n; ++k)
+		for(int k = 2; k < n; ++k)
 		{
 			int i = 0, j = k - 1;
 			while(i < j)
