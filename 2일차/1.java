@@ -21,9 +21,7 @@ public class main
 		
 		for(int i = 0; i < mod; ++i)
 		{
-			int factorial = 1;
-			for(int j = modCnt[i]; j >= 2; --j) factorial *= j;
-			ans += (factorial / 2);
+			ans += (modCnt[i] * (modCnt[i] - 1) / 2);
 		}
 		
 		System.out.println(ans);
