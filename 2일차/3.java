@@ -1,3 +1,5 @@
+![7](/img/7.png)
+```java
 package pack;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -31,3 +33,5 @@ public class main
 		input.close();
 	}
 }
+
+```
