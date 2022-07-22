@@ -22,13 +22,9 @@ public class main
 				stack.push(++cnt);
 				ans.append("+\n");
 			}
-			if(stack.peek() == a)
-			{
-				stack.pop();
-				ans.append("-\n");
-			}
-			else flag = false;
 			
+			if(stack.pop() != a) flag = false;
+			ans.append("-\n");
 		}
 		
 		if(flag) System.out.println(ans);
