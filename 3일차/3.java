@@ -13,7 +13,7 @@ public class main
 		int n = input.nextInt();
 		for(int i = 1; i <= n; ++i) que.add(i);
 		
-		while(que.size() != 1)
+		while(que.size() > 1)
 		{
 			que.poll();
 			que.add(que.poll());
