@@ -1,4 +1,4 @@
-package pack1;
+package pack;
 import java.util.Scanner;
 
 public class main
@@ -10,7 +10,7 @@ public class main
 	public static void dfs(int i)
 	{
 		visited[i] = 1;
-		for(int j = 1; j <= n; ++j)
+		for(int j = i + 1; j <= n; ++j)
 		{
 			if(map[i][j] == 1 && visited[j] == 0) dfs(j);
 		}
