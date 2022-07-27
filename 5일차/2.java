@@ -1,4 +1,4 @@
-package pack1;
+package pack;
 import java.util.Scanner;
 
 public class main
@@ -17,8 +17,8 @@ public class main
 			arr[i] = input.nextInt();
 			if(max < arr[i]) max = arr[i];
 		}
-		int maxDigit = -1;
 
+		int maxDigit = 0;
 		while(max > 0)
 		{
 			++maxDigit;
@@ -34,15 +34,10 @@ public class main
 			{
 				while(head[i] != tail[i]) arr[j++] = que[i][head[i]++];
 			}
-		
-			for(int i = 0; i < j; ++i) System.out.println(arr[i]);
 			t1 *= 10; t2 *= 10;
 		}
+		
+		for(int i = 0; i < n; ++i) System.out.println(arr[i]);
 		input.close();
 	}
 }
-/*
-% 10 / 1
-% 100 / 10
-% 1000 / 100
-*/
