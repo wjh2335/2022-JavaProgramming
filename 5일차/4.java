@@ -20,7 +20,6 @@ public class main
 	
 	public static void bfs(int i)
 	{
-		
 		int[] que = new int[n + 1];
 		int head = 0, tail = 0;
 		
