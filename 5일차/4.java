@@ -1,5 +1,7 @@
 package pack;
+import java.util.Queue;
 import java.util.Scanner;
+import java.util.LinkedList;
 
 public class main
 {
@@ -20,22 +22,21 @@ public class main
 	
 	public static void bfs(int i)
 	{
-		int[] que = new int[n + 1];
-		int head = 0, tail = 0;
+		Queue<Integer> que = new LinkedList<>();
 		
 		visited[i] = 1;
-		que[tail++] = i;
+		que.add(i);
 		
-		while(head < tail)
+		while(!que.isEmpty())
 		{
-			int now = que[head++];
+			int now = que.poll();
 			System.out.print(now + " ");
 			
 			for(int j = 1; j <= n; ++j)
 			{
 				if(map[now][j] == 1 && visited[j] == 0)
 				{
-					que[tail++] = j;
+					que.add(j);
 					visited[j] = 1;
 				}
 			}
